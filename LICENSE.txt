@@ -1,0 +1,13 @@
+Squares Bold font - used under OPEN SIL
+http://www.dafont.com/squares2.font
+
+IDE: Godot Engine - used under MIT
+http://www.godotengine.org/
+
+Sound Effects: Made with SFXR
+http://www.drpetter.se/project_sfxr.html
+
+Music: Annoyng beat - blipseq
+ludumdare.com/compo/2014/06/05/blipseq/
+
+Game Code is hereby released under the MIT
