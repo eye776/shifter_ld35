@@ -31,8 +31,8 @@ var trail_pos = []
 var trail_pos_pre = []
 var trail_vel = []
 
-export var TrailStiffness = 30000.0
-export var TrailDamping = 60.0
+export var trail_stiffness = 15000.0
+export var trail_damping = 650.0
 
 export var start_scale = 1.0
 export var end_scale = 0.3
@@ -98,7 +98,7 @@ func update_trail(delta):
 	for i in range(1, trailNodeCount):
 		if shape == NONE:
 			var stretch = trail_pos[i] - trail_pos[i-1]
-			var force = -TrailStiffness * stretch - TrailDamping * trail_vel[i]
+			var force = -trail_stiffness * stretch - trail_damping * trail_vel[i]
 			# Apply acceleration
 			var acceleration = force / trail_mass
 			trail_vel[i] += acceleration * delta
